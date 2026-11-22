@@ -1,0 +1,13 @@
+{
+  "name": "caretrack",
+  "version": "3.0.0",
+  "private": true,
+  "description": "CareTrack patient tracking and medication alerts with a shared server database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

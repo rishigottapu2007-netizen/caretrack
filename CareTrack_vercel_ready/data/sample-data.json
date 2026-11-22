@@ -1,0 +1,799 @@
+{
+  "_about": "Fictional demo data for CareTrack. These people, doctors and records are invented. Not medical advice.",
+  "seq": {
+    "U": 300,
+    "PAT": 1005,
+    "DOC": 112,
+    "APT": 3006,
+    "RX": 2007,
+    "MED": 9,
+    "CON": 4005,
+    "REC": 7000,
+    "MSG": 5002,
+    "NTF": 6001,
+    "BR": 0
+  },
+  "users": [
+    {
+      "id": "U-001",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "linkId": "ADM-01",
+      "active": true
+    },
+    {
+      "id": "U-101",
+      "username": "dr.ananya",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-101",
+      "active": true
+    },
+    {
+      "id": "U-102",
+      "username": "dr.rahul",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-102",
+      "active": true
+    },
+    {
+      "id": "U-103",
+      "username": "dr.meera",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-103",
+      "active": true
+    },
+    {
+      "id": "U-104",
+      "username": "dr.arjun",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-104",
+      "active": true
+    },
+    {
+      "id": "U-105",
+      "username": "dr.sneha",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-105",
+      "active": true
+    },
+    {
+      "id": "U-201",
+      "username": "rahul.g",
+      "password": "patient123",
+      "role": "patient",
+      "linkId": "PAT-1001",
+      "active": true
+    },
+    {
+      "id": "U-202",
+      "username": "priya.n",
+      "password": "patient123",
+      "role": "patient",
+      "linkId": "PAT-1002",
+      "active": true
+    },
+    {
+      "id": "U-203",
+      "username": "kiran.d",
+      "password": "patient123",
+      "role": "patient",
+      "linkId": "PAT-1003",
+      "active": true
+    },
+    {
+      "id": "U-204",
+      "username": "anita.j",
+      "password": "patient123",
+      "role": "patient",
+      "linkId": "PAT-1004",
+      "active": true
+    },
+    {
+      "id": "U-205",
+      "username": "mohan.i",
+      "password": "patient123",
+      "role": "patient",
+      "linkId": "PAT-1005",
+      "active": true
+    },
+    {
+      "id": "U-106",
+      "username": "dr.kavya",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-106",
+      "active": true
+    },
+    {
+      "id": "U-107",
+      "username": "dr.imran",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-107",
+      "active": true
+    },
+    {
+      "id": "U-108",
+      "username": "dr.nisha",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-108",
+      "active": true
+    },
+    {
+      "id": "U-109",
+      "username": "dr.dev",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-109",
+      "active": true
+    },
+    {
+      "id": "U-110",
+      "username": "dr.farah",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-110",
+      "active": true
+    },
+    {
+      "id": "U-111",
+      "username": "dr.rohan",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-111",
+      "active": true
+    },
+    {
+      "id": "U-112",
+      "username": "dr.leena",
+      "password": "doctor123",
+      "role": "doctor",
+      "linkId": "DOC-112",
+      "active": true
+    }
+  ],
+  "doctors": [
+    {
+      "id": "DOC-101",
+      "name": "Dr. Ananya Sharma",
+      "spec": "General Physician",
+      "qual": "MBBS, MD (Medicine)",
+      "exp": 12,
+      "email": "ananya.sharma@demo.care",
+      "phone": "9800011101",
+      "days": "Mon–Sat",
+      "slots": [
+        "09:00",
+        "10:00",
+        "11:00",
+        "15:00",
+        "16:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-102",
+      "name": "Dr. Rahul Verma",
+      "spec": "Cardiologist",
+      "qual": "MBBS, DM (Cardiology)",
+      "exp": 15,
+      "email": "rahul.verma@demo.care",
+      "phone": "9800011102",
+      "days": "Mon, Wed, Fri",
+      "slots": [
+        "10:00",
+        "11:00",
+        "14:00",
+        "16:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-103",
+      "name": "Dr. Meera Reddy",
+      "spec": "Dermatologist",
+      "qual": "MBBS, MD (Dermatology)",
+      "exp": 9,
+      "email": "meera.reddy@demo.care",
+      "phone": "9800011103",
+      "days": "Tue–Sat",
+      "slots": [
+        "09:30",
+        "11:30",
+        "15:30"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-104",
+      "name": "Dr. Arjun Rao",
+      "spec": "Neurologist",
+      "qual": "MBBS, DM (Neurology)",
+      "exp": 11,
+      "email": "arjun.rao@demo.care",
+      "phone": "9800011104",
+      "days": "Mon–Fri",
+      "slots": [
+        "10:00",
+        "12:00",
+        "15:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-105",
+      "name": "Dr. Sneha Kapoor",
+      "spec": "Pediatrician",
+      "qual": "MBBS, MD (Pediatrics)",
+      "exp": 8,
+      "email": "sneha.kapoor@demo.care",
+      "phone": "9800011105",
+      "days": "Mon–Sat",
+      "slots": [
+        "09:00",
+        "10:30",
+        "12:00",
+        "17:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-106",
+      "name": "Dr. Kavya Menon",
+      "spec": "Orthopedic Specialist",
+      "qual": "MBBS, MS (Orthopedics)",
+      "exp": 10,
+      "email": "kavya.menon@demo.care",
+      "phone": "9800011106",
+      "days": "Mon–Fri",
+      "slots": [
+        "09:00",
+        "11:00",
+        "15:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-107",
+      "name": "Dr. Imran Ali",
+      "spec": "Gynecologist",
+      "qual": "MBBS, MS (Obstetrics and Gynecology)",
+      "exp": 13,
+      "email": "imran.ali@demo.care",
+      "phone": "9800011107",
+      "days": "Mon–Sat",
+      "slots": [
+        "10:00",
+        "12:00",
+        "16:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-108",
+      "name": "Dr. Nisha Bose",
+      "spec": "Ophthalmologist",
+      "qual": "MBBS, MS (Ophthalmology)",
+      "exp": 9,
+      "email": "nisha.bose@demo.care",
+      "phone": "9800011108",
+      "days": "Tue–Sat",
+      "slots": [
+        "09:30",
+        "12:00",
+        "15:30"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-109",
+      "name": "Dr. Dev Patel",
+      "spec": "ENT Specialist",
+      "qual": "MBBS, MS (ENT)",
+      "exp": 11,
+      "email": "dev.patel@demo.care",
+      "phone": "9800011109",
+      "days": "Mon–Fri",
+      "slots": [
+        "09:00",
+        "13:00",
+        "16:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-110",
+      "name": "Dr. Farah Khan",
+      "spec": "Endocrinologist",
+      "qual": "MBBS, DM (Endocrinology)",
+      "exp": 12,
+      "email": "farah.khan@demo.care",
+      "phone": "9800011110",
+      "days": "Mon, Wed, Fri",
+      "slots": [
+        "10:00",
+        "12:00",
+        "15:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-111",
+      "name": "Dr. Rohan Das",
+      "spec": "Psychiatrist",
+      "qual": "MBBS, MD (Psychiatry)",
+      "exp": 8,
+      "email": "rohan.das@demo.care",
+      "phone": "9800011111",
+      "days": "Mon–Sat",
+      "slots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
+      "active": true
+    },
+    {
+      "id": "DOC-112",
+      "name": "Dr. Leena Shah",
+      "spec": "Dentist",
+      "qual": "BDS, MDS",
+      "exp": 7,
+      "email": "leena.shah@demo.care",
+      "phone": "9800011112",
+      "days": "Mon–Sat",
+      "slots": [
+        "09:30",
+        "12:30",
+        "16:30"
+      ],
+      "active": true
+    }
+  ],
+  "patients": [
+    {
+      "id": "PAT-1001",
+      "name": "Rahul Gupta",
+      "age": 46,
+      "gender": "Male",
+      "blood": "B+",
+      "phone": "9810011001",
+      "email": "rahul.gupta@demo.care",
+      "address": "12 Lake View Road, Pune",
+      "allergies": "Penicillin",
+      "conditions": "Hypertension, high cholesterol",
+      "ecName": "Sunita Gupta",
+      "ecPhone": "9810011101",
+      "doctorId": "DOC-102",
+      "active": true
+    },
+    {
+      "id": "PAT-1002",
+      "name": "Priya Nair",
+      "age": 32,
+      "gender": "Female",
+      "blood": "O+",
+      "phone": "9810011002",
+      "email": "priya.nair@demo.care",
+      "address": "4 Palm Court, Kochi",
+      "allergies": "None known",
+      "conditions": "Seasonal allergic rhinitis",
+      "ecName": "Arun Nair",
+      "ecPhone": "9810011102",
+      "doctorId": "DOC-101",
+      "active": true
+    },
+    {
+      "id": "PAT-1003",
+      "name": "Kiran Das",
+      "age": 28,
+      "gender": "Male",
+      "blood": "A+",
+      "phone": "9810011003",
+      "email": "kiran.das@demo.care",
+      "address": "7 Riverside Lane, Kolkata",
+      "allergies": "Dust, pollen",
+      "conditions": "Eczema",
+      "ecName": "Mina Das",
+      "ecPhone": "9810011103",
+      "doctorId": "DOC-103",
+      "active": true
+    },
+    {
+      "id": "PAT-1004",
+      "name": "Anita Joshi",
+      "age": 39,
+      "gender": "Female",
+      "blood": "AB+",
+      "phone": "9810011004",
+      "email": "anita.joshi@demo.care",
+      "address": "22 Hill Crest, Nashik",
+      "allergies": "Sulfa drugs",
+      "conditions": "Seizure disorder",
+      "ecName": "Vikram Joshi",
+      "ecPhone": "9810011104",
+      "doctorId": "DOC-104",
+      "active": true
+    },
+    {
+      "id": "PAT-1005",
+      "name": "Mohan Iyer",
+      "age": 7,
+      "gender": "Male",
+      "blood": "O-",
+      "phone": "9810011005",
+      "email": "parent.iyer@demo.care",
+      "address": "9 Garden Street, Chennai",
+      "allergies": "Dairy",
+      "conditions": "Recurrent tonsillitis",
+      "ecName": "Lakshmi Iyer",
+      "ecPhone": "9810011105",
+      "doctorId": "DOC-105",
+      "active": true
+    }
+  ],
+  "medicines": [
+    {
+      "id": "MED-01",
+      "name": "Paracetamol 500 mg",
+      "category": "Analgesic",
+      "qty": 120,
+      "min": 30,
+      "expiry": "+300"
+    },
+    {
+      "id": "MED-02",
+      "name": "Vitamin D3 60,000 IU",
+      "category": "Supplement",
+      "qty": 8,
+      "min": 20,
+      "expiry": "+200"
+    },
+    {
+      "id": "MED-03",
+      "name": "Amoxicillin 500 mg",
+      "category": "Antibiotic",
+      "qty": 0,
+      "min": 25,
+      "expiry": "+150"
+    },
+    {
+      "id": "MED-04",
+      "name": "Atorvastatin 10 mg",
+      "category": "Cardiac",
+      "qty": 64,
+      "min": 20,
+      "expiry": "+400"
+    },
+    {
+      "id": "MED-05",
+      "name": "Amlodipine 5 mg",
+      "category": "Cardiac",
+      "qty": 52,
+      "min": 15,
+      "expiry": "+365"
+    },
+    {
+      "id": "MED-06",
+      "name": "Cetirizine 10 mg",
+      "category": "Antihistamine",
+      "qty": 45,
+      "min": 15,
+      "expiry": "+90"
+    },
+    {
+      "id": "MED-07",
+      "name": "Levetiracetam 500 mg",
+      "category": "Neurology",
+      "qty": 14,
+      "min": 10,
+      "expiry": "+40"
+    },
+    {
+      "id": "MED-08",
+      "name": "Hydrocortisone 1% cream",
+      "category": "Dermatology",
+      "qty": 22,
+      "min": 10,
+      "expiry": "-5"
+    },
+    {
+      "id": "MED-09",
+      "name": "Metformin 500 mg",
+      "category": "Diabetes",
+      "qty": 18,
+      "min": 25,
+      "expiry": "+250"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "RX-2001",
+      "patientId": "PAT-1001",
+      "doctorId": "DOC-102",
+      "medicineId": "MED-04",
+      "dosage": "10 mg tablet",
+      "morning": 0,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-40",
+      "end": "+50",
+      "followUp": "+14",
+      "instructions": "Take at night. Avoid grapefruit juice."
+    },
+    {
+      "id": "RX-2002",
+      "patientId": "PAT-1001",
+      "doctorId": "DOC-102",
+      "medicineId": "MED-05",
+      "dosage": "5 mg tablet",
+      "morning": 1,
+      "afternoon": 0,
+      "night": 0,
+      "food": "After food",
+      "start": "-40",
+      "end": "+50",
+      "followUp": "+14",
+      "instructions": "Check blood pressure weekly."
+    },
+    {
+      "id": "RX-2003",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "medicineId": "MED-06",
+      "dosage": "10 mg tablet",
+      "morning": 0,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-10",
+      "end": "+20",
+      "followUp": "+14",
+      "instructions": "May cause drowsiness."
+    },
+    {
+      "id": "RX-2004",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "medicineId": "MED-02",
+      "dosage": "60,000 IU capsule",
+      "morning": 0,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-3",
+      "end": "+4",
+      "followUp": "+7",
+      "instructions": "Take with the largest meal of the day."
+    },
+    {
+      "id": "RX-2005",
+      "patientId": "PAT-1003",
+      "doctorId": "DOC-103",
+      "medicineId": "MED-06",
+      "dosage": "10 mg tablet",
+      "morning": 0,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-6",
+      "end": "+8",
+      "followUp": "+14",
+      "instructions": "Use with the night routine."
+    },
+    {
+      "id": "RX-2006",
+      "patientId": "PAT-1004",
+      "doctorId": "DOC-104",
+      "medicineId": "MED-07",
+      "dosage": "500 mg tablet",
+      "morning": 1,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-30",
+      "end": "+60",
+      "followUp": "+10",
+      "instructions": "Do not stop suddenly. Keep a seizure diary."
+    },
+    {
+      "id": "RX-2007",
+      "patientId": "PAT-1005",
+      "doctorId": "DOC-105",
+      "medicineId": "MED-03",
+      "dosage": "As per doctor's chart",
+      "morning": 1,
+      "afternoon": 0,
+      "night": 1,
+      "food": "After food",
+      "start": "-8",
+      "end": "-1",
+      "followUp": "+3",
+      "instructions": "Finish the full course."
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APT-3001",
+      "patientId": "PAT-1001",
+      "doctorId": "DOC-102",
+      "date": "+2",
+      "time": "10:00",
+      "reason": "Chest tightness during walks",
+      "status": "Pending"
+    },
+    {
+      "id": "APT-3002",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "date": "+0",
+      "time": "11:00",
+      "reason": "Persistent sneezing and itchy eyes",
+      "status": "Approved"
+    },
+    {
+      "id": "APT-3003",
+      "patientId": "PAT-1003",
+      "doctorId": "DOC-103",
+      "date": "-5",
+      "time": "15:30",
+      "reason": "Itchy patches on arms",
+      "status": "Completed"
+    },
+    {
+      "id": "APT-3004",
+      "patientId": "PAT-1004",
+      "doctorId": "DOC-104",
+      "date": "+4",
+      "time": "12:00",
+      "reason": "Seizure review",
+      "status": "Pending"
+    },
+    {
+      "id": "APT-3005",
+      "patientId": "PAT-1005",
+      "doctorId": "DOC-105",
+      "date": "+1",
+      "time": "09:00",
+      "reason": "Sore throat and fever for two days",
+      "status": "Pending"
+    },
+    {
+      "id": "APT-3006",
+      "patientId": "PAT-1001",
+      "doctorId": "DOC-102",
+      "date": "-30",
+      "time": "16:00",
+      "reason": "Annual heart check",
+      "status": "Completed"
+    }
+  ],
+  "records": [
+    {
+      "id": "CON-4001",
+      "patientId": "PAT-1001",
+      "doctorId": "DOC-102",
+      "date": "-30",
+      "symptoms": "Chest tightness on brisk walks",
+      "diagnosis": "High LDL cholesterol with borderline BP",
+      "observations": "BP 136/86, pulse 78, BMI 27.1",
+      "treatment": "Start atorvastatin; reduce salt; 30-minute daily walk",
+      "followUp": "-16"
+    },
+    {
+      "id": "CON-4002",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "date": "-10",
+      "symptoms": "Sneezing, itchy eyes, blocked nose",
+      "diagnosis": "Seasonal allergic rhinitis",
+      "observations": "Afebrile; chest clear",
+      "treatment": "Cetirizine at night; saline nasal rinse",
+      "followUp": "+20"
+    },
+    {
+      "id": "CON-4003",
+      "patientId": "PAT-1003",
+      "doctorId": "DOC-103",
+      "date": "-5",
+      "symptoms": "Dry, itchy patches on forearms",
+      "diagnosis": "Atopic dermatitis",
+      "observations": "Mild redness, no infection",
+      "treatment": "Emollient twice daily; avoid hot showers",
+      "followUp": "+25"
+    },
+    {
+      "id": "CON-4004",
+      "patientId": "PAT-1004",
+      "doctorId": "DOC-104",
+      "date": "-30",
+      "symptoms": "Brief episodes of staring and jerking",
+      "diagnosis": "Focal seizures (under review)",
+      "observations": "Neurological exam normal",
+      "treatment": "Start levetiracetam; keep a sleep and seizure log",
+      "followUp": "+10"
+    },
+    {
+      "id": "CON-4005",
+      "patientId": "PAT-1005",
+      "doctorId": "DOC-105",
+      "date": "-8",
+      "symptoms": "Fever, sore throat",
+      "diagnosis": "Acute tonsillitis",
+      "observations": "Swollen tonsils, no breathing difficulty",
+      "treatment": "Antibiotic course; fluids; fever care as advised",
+      "followUp": "+3"
+    }
+  ],
+  "messages": [
+    {
+      "id": "MSG-5001",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "from": "patient",
+      "text": "Hi doctor, can I take Vitamin D with my allergy tablet?",
+      "at": "Demo data"
+    },
+    {
+      "id": "MSG-5002",
+      "patientId": "PAT-1002",
+      "doctorId": "DOC-101",
+      "from": "doctor",
+      "text": "Yes, both can be taken after food. Message me if you notice a rash.",
+      "at": "Demo data"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-6001",
+      "uid": "U-201",
+      "msg": "Welcome to the CareTrack demo. Your medicine reminders are active.",
+      "at": "Demo data",
+      "read": false
+    }
+  ],
+  "doses": [],
+  "bloodBank": [
+    {
+      "group": "A+",
+      "units": 12
+    },
+    {
+      "group": "A-",
+      "units": 4
+    },
+    {
+      "group": "B+",
+      "units": 9
+    },
+    {
+      "group": "B-",
+      "units": 3
+    },
+    {
+      "group": "O+",
+      "units": 16
+    },
+    {
+      "group": "O-",
+      "units": 5
+    },
+    {
+      "group": "AB+",
+      "units": 6
+    },
+    {
+      "group": "AB-",
+      "units": 2
+    }
+  ],
+  "bloodRequests": []
+}

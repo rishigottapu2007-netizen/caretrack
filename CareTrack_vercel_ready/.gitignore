@@ -1,0 +1,5 @@
+node_modules/
+# Live database: contains password hashes and login sessions. Never commit it.
+data/caretrack-db.json
+data/caretrack-db.json.tmp
+.DS_Store
